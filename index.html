@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natália Figueredo | Fotografia Afetiva & Documental</title>
+  <meta name="description" content="Fotografia afetiva e documental para gestantes, famílias, partos e celebrações. Registros espontâneos, atemporais e cheios de alma por Natália Figueredo.">
+  <meta name="keywords" content="fotografia afetiva, ensaio gestante, fotografia de família, fotografia documental, ensaio newborn lifestyle, batizados, aniversários infantis, Natália Figueredo">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Natália Figueredo | Fotografia Afetiva & Documental">
+  <meta property="og:description" content="Eternize os momentos mais preciosos da sua família com um olhar artístico, sensível e sem poses artificiais.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1544126592-807ade215a0b?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Google Fonts: Playfair Display, Cormorant Garamond, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            linen: '#FBF8F5',
+            sand: '#F4ECE4',
+            cream: '#FAF6EE',
+            warmgray: '#7A7269',
+            moss: '#233428',
+            forest: '#1B2A20',
+            leaf: '#435D49',
+            sage: '#8FA292',
+            terracotta: '#B46A55',
+            clay: '#A25946',
+            gold: '#C5A059',
+            champagne: '#E8DFC8',
+            darktext: '#22201E'
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            cormorant: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          letterSpacing: {
+            widest: '.28em',
+            ultra: '.35em',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Estilos personalizados e animações suaves */
+    ::selection {
+      background-color: #435D49;
+      color: #FBF8F5;
+    }
+
+    /* Scrollbar delicada */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F4ECE4;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #8FA292;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #435D49;
+    }
+
+    .eyebrow {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.28em;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .eyebrow::before, .eyebrow::after {
+      content: "";
+      width: 1.5rem;
+      height: 1px;
+      background-color: currentColor;
+      opacity: 0.5;
+    }
+
+    /* Efeito de rotação contínua para o selo */
+    @keyframes spin-slow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .spin-slow {
+      animation: spin-slow 22s linear infinite;
+    }
+
+    /* Zoom suave nos cards */
+    .img-zoom {
+      transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .group:hover .img-zoom {
+      transform: scale(1.06);
+    }
+
+    /* Animação suave para acordião */
+    .faq-answer {
+      transition: max-height 0.4s ease-out, opacity 0.3s ease-out;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+    }
+    .faq-item.active .faq-answer {
+      max-height: 350px;
+      opacity: 1;
+    }
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body class="bg-linen text-darktext font-sans antialiased selection:bg-leaf selection:text-linen">
+
+  <!-- 1. TOPBAR DE AVISO & AGENDA -->
+  <div class="bg-forest text-cream text-[11px] sm:text-xs py-2 px-4 text-center tracking-widest uppercase font-medium flex items-center justify-center gap-2 border-b border-moss">
+    <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+    <span>Agenda aberta para o primeiro e segundo semestre • Atendimento exclusivo e vagas limitadas por mês</span>
+  </div>
+
+  <!-- 2. HEADER & NAVEGAÇÃO PRINCIPAL -->
+  <header id="main-header" class="fixed top-8 inset-x-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      <div class="bg-white/85 backdrop-blur-md border border-champagne/60 rounded-full px-6 py-3.5 shadow-sm flex items-center justify-between transition-all duration-300" id="navbar-pill">
+        
+        <!-- Logo -->
+        <a href="#home" class="flex flex-col group">
+          <span class="font-serif text-lg sm:text-xl font-medium tracking-wide text-forest transition-colors group-hover:text-terracotta">
+            Natália Figueredo
+          </span>
+          <span class="text-[9px] uppercase tracking-[0.32em] text-warmgray -mt-0.5">
+            fotografia afetiva
+          </span>
+        </a>
+
+        <!-- Menu Desktop -->
+        <nav class="hidden lg:flex items-center gap-7">
+          <a href="#o-olhar" class="text-xs uppercase tracking-[0.2em] font-medium text-darktext/80 hover:text-terracotta transition-colors">O Olhar</a>
+          <a href="#servicos" class="text-xs uppercase tracking-[0.2em] font-medium text-darktext/80 hover:text-terracotta transition-colors">Experiências</a>
+          <a href="#portfolio" class="text-xs uppercase tracking-[0.2em] font-medium text-darktext/80 hover:text-terracotta transition-colors">Portfólio</a>
+          <a href="#simulador" class="text-xs uppercase tracking-[0.2em] font-medium text-darktext/80 hover:text-terracotta transition-colors">Simulador</a>
+          <a href="#sobre" class="text-xs uppercase tracking-[0.2em] font-medium text-darktext/80 hover:text-terracotta transition-colors">Sobre</a>
+          <a href="#albuns" class="text-xs uppercase tracking-[0.2em] font-medium text-darktext/80 hover:text-terracotta transition-colors">Álbuns</a>
+          <a href="#faq" class="text-xs uppercase tracking-[0.2em] font-medium text-darktext/80 hover:text-terracotta transition-colors">Dúvidas</a>
+        </nav>
+
+        <!-- CTA Header -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://wa.me/5561999999999?text=Ol%C3%A1%2C%20Nat%C3%A1lia!%20Amei%20seu%20trabalho%20e%20gostaria%20de%20consultar%20disponibilidade%20para%20um%20ensaio." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-forest text-cream text-[11px] uppercase tracking-[0.22em] font-semibold hover:bg-terracotta transition-all shadow-sm">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19.05 4.91A10.04 10.04 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.93 9.93 0 0 0 4.78 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.02Zm-7.01 15.24h-.01a8.23 8.23 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.27-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.97-.14.16-.29.18-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.49-.41-.42-.56-.43h-.48c-.16 0-.43.06-.66.31-.23.25-.86.84-.86 2.05 0 1.2.88 2.37 1 2.53.12.16 1.73 2.65 4.2 3.71.59.25 1.05.4 1.4.51.59.19 1.12.16 1.55.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>
+            <span>Reservar Data</span>
+          </a>
+        </div>
+
+        <!-- Botão Menu Mobile -->
+        <button id="mobile-menu-btn" aria-label="Abrir menu" class="lg:hidden p-2 text-forest focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Gaveta do Menu Mobile -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-linen border-b border-champagne px-6 py-8 shadow-xl">
+      <div class="flex flex-col gap-4 text-center">
+        <a href="#o-olhar" class="mobile-nav-link text-sm uppercase tracking-widest font-medium py-2 text-darktext hover:text-terracotta">O Olhar</a>
+        <a href="#servicos" class="mobile-nav-link text-sm uppercase tracking-widest font-medium py-2 text-darktext hover:text-terracotta">Experiências</a>
+        <a href="#portfolio" class="mobile-nav-link text-sm uppercase tracking-widest font-medium py-2 text-darktext hover:text-terracotta">Portfólio</a>
+        <a href="#simulador" class="mobile-nav-link text-sm uppercase tracking-widest font-medium py-2 text-darktext hover:text-terracotta">Simulador de Sessão</a>
+        <a href="#sobre" class="mobile-nav-link text-sm uppercase tracking-widest font-medium py-2 text-darktext hover:text-terracotta">Sobre Natália</a>
+        <a href="#albuns" class="mobile-nav-link text-sm uppercase tracking-widest font-medium py-2 text-darktext hover:text-terracotta">Álbuns de Família</a>
+        <a href="#faq" class="mobile-nav-link text-sm uppercase tracking-widest font-medium py-2 text-darktext hover:text-terracotta">Perguntas Frequentes</a>
+        <div class="pt-4 border-t border-champagne">
+          <a href="https://wa.me/5561999999999" target="_blank" class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full bg-forest text-cream text-xs uppercase tracking-widest font-semibold hover:bg-terracotta">
+            Falar pelo WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. HERO SECTION CINEMÁTICA -->
+  <section id="home" class="relative min-h-[92vh] lg:min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden">
+    <!-- Imagens de Fundo com Fade e Ken Burns sutil -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1544126592-807ade215a0b?auto=format&fit=crop&w=2000&q=85" alt="Ensaio afetivo gestante em luz natural" class="w-full h-full object-cover object-center filter brightness-[0.78]">
+      <div class="absolute inset-0 bg-gradient-to-t from-linen via-forest/30 to-forest/60 mix-blend-multiply"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-linen"></div>
+    </div>
+
+    <!-- Conteúdo Central Hero -->
+    <div class="relative z-10 max-w-5xl mx-auto px-6 text-center text-cream">
+      
+      <!-- Eyebrow poético -->
+      <p class="eyebrow text-cream/90 mb-6 drop-shadow-sm">
+        tempo, presença & sensibilidade
+      </p>
+
+      <!-- Headline Principal com Serifa de Alto Padrão -->
+      <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-[5.2rem] font-light leading-[1.08] tracking-tight mb-8 drop-shadow-md">
+        Como você deseja reviver seus momentos mais doces daqui a vinte anos?
+      </h1>
+
+      <p class="max-w-2xl mx-auto text-sm sm:text-base md:text-lg text-cream/90 font-light leading-relaxed mb-10 drop-shadow">
+        Fotografia afetiva e documental para gestantes, famílias e celebrações. Registros espontâneos, acolhedores e com a luz suave da vida real — sem poses engessadas.
+      </p>
+
+      <!-- Botões de Ação -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+        <a href="https://wa.me/5561999999999?text=Ol%C3%A1%2C%20Nat%C3%A1lia!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20e%20disponibilidade%20para%20uma%20sess%C3%A3o." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-full bg-cream text-forest font-semibold text-xs uppercase tracking-[0.22em] hover:bg-terracotta hover:text-cream transition-all duration-300 shadow-lg flex items-center justify-center gap-2 group">
+          <span>Quero eternizar minha história</span>
+          <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+
+        <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 rounded-full border border-cream/70 text-cream font-medium text-xs uppercase tracking-[0.22em] hover:bg-cream/15 transition-all duration-300 backdrop-blur-sm">
+          Explorar Portfólio
+        </a>
+      </div>
+
+      <!-- Selo Circular de Fotografia Afetiva -->
+      <div class="mt-14 hidden md:flex items-center justify-center">
+        <div class="relative w-28 h-28 flex items-center justify-center">
+          <svg class="w-full h-full spin-slow fill-current text-cream/80" viewBox="0 0 100 100">
+            <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent"/>
+            <text class="text-[9.5px] uppercase tracking-[0.25em] font-sans">
+              <textPath href="#circlePath">
+                • NATÁLIA FIGUEREDO • FOTOGRAFIA AFETIVA •
+              </textPath>
+            </text>
+          </svg>
+          <div class="absolute inset-0 flex items-center justify-center text-cream">
+            <svg class="w-6 h-6 stroke-current" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Indicador de Scroll -->
+    <a href="#o-olhar" class="absolute bottom-6 left-1/2 -translate-x-1/2 text-cream/70 hover:text-cream flex flex-col items-center gap-1 transition-colors">
+      <span class="text-[10px] uppercase tracking-widest">Descubra</span>
+      <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+    </a>
+  </section>
+
+  <!-- 4. MANIFESTO & O OLHAR (FILOSOFIA AFETIVA) -->
+  <section id="o-olhar" class="py-24 sm:py-32 bg-linen relative">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <!-- Citação Poética Superior -->
+      <div class="text-center max-w-3xl mx-auto mb-20">
+        <p class="eyebrow text-leaf mb-4">o início de tudo</p>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-forest font-normal leading-[1.2] mb-6">
+          A sensibilidade de transformar as conexões mais puras em memórias que atravessam gerações.
+        </h2>
+        <p class="text-warmgray text-base sm:text-lg leading-relaxed font-light">
+          Longe de sorrisos impostos e cenários artificiais, a fotografia que faço busca o que acontece no intervalo dos gestos: o abraço apertado do irmãozinho, o carinho despretensioso na barriga que cresce, a respiração calma do bebê no colo da mãe.
+        </p>
+      </div>
+
+      <!-- Grid dos 3 Pilares com Linhas Verticais Elegantes -->
+      <div class="grid md:grid-cols-3 gap-10 md:gap-8 pt-6 border-t border-champagne">
+        
+        <!-- Pilar 1 -->
+        <div class="group text-center md:text-left">
+          <div class="w-8 h-px bg-leaf/60 mb-6 transition-all duration-300 group-hover:w-16 group-hover:bg-terracotta"></div>
+          <span class="font-cormorant italic text-3xl text-leaf/70 block mb-2">01.</span>
+          <h3 class="font-serif text-xl sm:text-2xl text-forest mb-3">Direção Leve e Humanizada</h3>
+          <p class="text-sm text-warmgray leading-relaxed font-light">
+            Você não precisa saber como posar. Eu conduzo a conversa, crio um ambiente seguro e deixo os momentos fluírem naturalmente, respeitando o tempo de cada criança e a personalidade de cada mãe.
+          </p>
+        </div>
+
+        <!-- Pilar 2 -->
+        <div class="group text-center md:text-left">
+          <div class="w-8 h-px bg-leaf/60 mb-6 transition-all duration-300 group-hover:w-16 group-hover:bg-terracotta"></div>
+          <span class="font-cormorant italic text-3xl text-leaf/70 block mb-2">02.</span>
+          <h3 class="font-serif text-xl sm:text-2xl text-forest mb-3">Luz Natural & Autenticidade</h3>
+          <p class="text-sm text-warmgray leading-relaxed font-light">
+            A luz dourada do entardecer ou a suavidade da janela do seu quarto. Priorizo a iluminação que traz calor humano, conforto visual e uma sensação orgânica e aconchegante.
+          </p>
+        </div>
+
+        <!-- Pilar 3 -->
+        <div class="group text-center md:text-left">
+          <div class="w-8 h-px bg-leaf/60 mb-6 transition-all duration-300 group-hover:w-16 group-hover:bg-terracotta"></div>
+          <span class="font-cormorant italic text-3xl text-leaf/70 block mb-2">03.</span>
+          <h3 class="font-serif text-xl sm:text-2xl text-forest mb-3">Memória Atemporal & Toque Físico</h3>
+          <p class="text-sm text-warmgray leading-relaxed font-light">
+            Tratamento de cor com paleta autoral, sem filtros passageiros da moda. Imagens concebidas para serem reveladas em álbuns de linho fino que sobreviverão ao tempo digital.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. DESTAQUE EDITORIAL (O GESTO QUE NINGUÉM MAIS VÊ) -->
+  <section class="py-20 bg-sand/60 border-y border-champagne">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        
+        <!-- Imagem com Borda e Frase Embutida -->
+        <div class="relative overflow-hidden rounded-2xl shadow-xl group">
+          <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=1200&q=85" alt="Mãe segurando a mão de seu bebê recém-nascido" class="w-full aspect-[4/3] sm:aspect-[16/11] object-cover img-zoom">
+          <div class="absolute inset-0 bg-gradient-to-t from-forest/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-6 left-6 right-6 text-cream">
+            <p class="font-cormorant italic text-xl sm:text-2xl">
+              "O tempo passa rápido demais. A imagem permanece como testemunha do amor."
+            </p>
+            <span class="text-[10px] uppercase tracking-widest text-cream/70 mt-1 block">ensaio afetivo no ninho familiar</span>
+          </div>
+        </div>
+
+        <!-- Texto Narrativo -->
+        <div>
+          <p class="eyebrow text-terracotta mb-4">o que ninguém vê</p>
+          <h2 class="font-serif text-3xl sm:text-4xl text-forest font-normal leading-[1.2] mb-6">
+            A arte de capturar a emoção invisível entre as pessoas que se amam.
+          </h2>
+          <p class="text-warmgray leading-relaxed mb-6 font-light">
+            Muitas mães me dizem: <em>"Natália, eu quase não tenho fotos com meu filho porque sempre sou eu que estou segurando a câmera."</em>
+          </p>
+          <p class="text-warmgray leading-relaxed mb-8 font-light">
+            Estar presente no retrato é um ato de amor por você e pelo seu legado. Daqui a trinta anos, quando seu filho olhar esse álbum, ele não vai reparar em pequenas imperfeições: ele vai enxergar o tamanho do amor nos seus olhos e o aconchego do seu abraço.
+          </p>
+
+          <div class="flex items-center gap-6 pt-4">
+            <div class="flex -space-x-3">
+              <img class="w-11 h-11 rounded-full border-2 border-linen object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Cliente">
+              <img class="w-11 h-11 rounded-full border-2 border-linen object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Cliente">
+              <img class="w-11 h-11 rounded-full border-2 border-linen object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Cliente">
+            </div>
+            <div>
+              <p class="text-xs font-semibold text-forest uppercase tracking-wider">+350 famílias registradas</p>
+              <p class="text-xs text-warmgray">Histórias que ganharam lar e memória palpável</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. EXPERIÊNCIAS FOTOGRÁFICAS (SERVIÇOS) -->
+  <section id="servicos" class="py-24 sm:py-32 bg-linen">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <p class="eyebrow text-leaf mb-3">o que eu faço com o coração</p>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-forest font-normal leading-tight mb-4">
+          Experiências pensadas para cada capítulo da sua história
+        </h2>
+        <p class="text-warmgray text-sm sm:text-base font-light">
+          Cada sessão é planejada nos mínimos detalhes: do roteiro de roupas ao ritmo do dia.
+        </p>
+      </div>
+
+      <!-- Grid de 4 Cards Ricos de Serviços -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Serviço 1: Gestante -->
+        <div class="group bg-white rounded-2xl overflow-hidden border border-champagne shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+          <div class="relative aspect-[3/4] overflow-hidden bg-sand">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=85" alt="Ensaio de Gestante em luz natural" class="w-full h-full object-cover img-zoom">
+            <div class="absolute top-4 left-4 bg-forest/80 backdrop-blur-sm text-cream text-[10px] font-semibold uppercase tracking-widest px-3 py-1 rounded-full">
+              Doce Espera
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif text-2xl text-forest mb-2">Ensaio Gestante</h3>
+              <p class="text-xs text-warmgray leading-relaxed mb-4 font-light">
+                A potência da maternidade celebrada com leveza, carinho e respeito pelo seu corpo. Realizado em casa ou ao ar livre.
+              </p>
+              <ul class="text-[12px] text-darktext/80 space-y-1.5 mb-6 border-t border-sand pt-3 font-medium">
+                <li class="flex items-center gap-2">✓ Recomendado entre 28 e 32 semanas</li>
+                <li class="flex items-center gap-2">✓ Participação do parceiro e filhos</li>
+                <li class="flex items-center gap-2">✓ Consultoria prévia de figurino</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/5561999999999?text=Ol%C3%A1%2C%20Nat%C3%A1lia!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Ensaio%20Gestante." target="_blank" class="w-full py-2.5 rounded-full border border-forest text-forest text-[11px] uppercase tracking-widest font-semibold text-center hover:bg-forest hover:text-cream transition-colors block">
+              Consultar Vagas
+            </a>
+          </div>
+        </div>
+
+        <!-- Serviço 2: Família & Lifestyle -->
+        <div class="group bg-white rounded-2xl overflow-hidden border border-champagne shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+          <div class="relative aspect-[3/4] overflow-hidden bg-sand">
+            <img src="https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?auto=format&fit=crop&w=800&q=85" alt="Fotografia de Família em momento espontâneo" class="w-full h-full object-cover img-zoom">
+            <div class="absolute top-4 left-4 bg-leaf/90 backdrop-blur-sm text-cream text-[10px] font-semibold uppercase tracking-widest px-3 py-1 rounded-full">
+              Conexão Real
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif text-2xl text-forest mb-2">Família & Lifestyle</h3>
+              <p class="text-xs text-warmgray leading-relaxed mb-4 font-light">
+                A beleza do cotidiano, as cócegas no tapete da sala, a caminhada no parque. A memória viva da sua família em sua essência.
+              </p>
+              <ul class="text-[12px] text-darktext/80 space-y-1.5 mb-6 border-t border-sand pt-3 font-medium">
+                <li class="flex items-center gap-2">✓ No lar ou locais abertos com afeto</li>
+                <li class="flex items-center gap-2">✓ Sem poses travadas ou pressa</li>
+                <li class="flex items-center gap-2">✓ Inclusão de pets da família</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/5561999999999?text=Ol%C3%A1%2C%20Nat%C3%A1lia!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Ensaio%20de%20Fam%C3%ADlia." target="_blank" class="w-full py-2.5 rounded-full border border-forest text-forest text-[11px] uppercase tracking-widest font-semibold text-center hover:bg-forest hover:text-cream transition-colors block">
+              Consultar Vagas
+            </a>
+          </div>
+        </div>
+
+        <!-- Serviço 3: Newborn Afetivo -->
+        <div class="group bg-white rounded-2xl overflow-hidden border border-champagne shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+          <div class="relative aspect-[3/4] overflow-hidden bg-sand">
+            <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=800&q=85" alt="Ensaio Newborn Afetivo no colo materno" class="w-full h-full object-cover img-zoom">
+            <div class="absolute top-4 left-4 bg-terracotta/90 backdrop-blur-sm text-cream text-[10px] font-semibold uppercase tracking-widest px-3 py-1 rounded-full">
+              Primeiros Dias
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif text-2xl text-forest mb-2">Newborn Afetivo</h3>
+              <p class="text-xs text-warmgray leading-relaxed mb-4 font-light">
+                Sem poses mirabolantes ou cestos desconfortáveis. Registrado no aconchego do colo dos pais e no berço do bebê.
+              </p>
+              <ul class="text-[12px] text-darktext/80 space-y-1.5 mb-6 border-t border-sand pt-3 font-medium">
+                <li class="flex items-center gap-2">✓ No conforto e segurança da sua casa</li>
+                <li class="flex items-center gap-2">✓ Respeito às pausas de amamentação</li>
+                <li class="flex items-center gap-2">✓ Ideal até 30 dias de vida</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/5561999999999?text=Ol%C3%A1%2C%20Nat%C3%A1lia!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Newborn%20Afetivo." target="_blank" class="w-full py-2.5 rounded-full border border-forest text-forest text-[11px] uppercase tracking-widest font-semibold text-center hover:bg-forest hover:text-cream transition-colors block">
+              Consultar Vagas
+            </a>
+          </div>
+        </div>
+
+        <!-- Serviço 4: Festas Infantis & Celebrações -->
+        <div class="group bg-white rounded-2xl overflow-hidden border border-champagne shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+          <div class="relative aspect-[3/4] overflow-hidden bg-sand">
+            <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=85" alt="Celebração infantil com alegria genuína" class="w-full h-full object-cover img-zoom">
+            <div class="absolute top-4 left-4 bg-gold/90 backdrop-blur-sm text-forest text-[10px] font-semibold uppercase tracking-widest px-3 py-1 rounded-full">
+              Celebração
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif text-2xl text-forest mb-2">Festas & Batizados</h3>
+              <p class="text-xs text-warmgray leading-relaxed mb-4 font-light">
+                A espontaneidade dos amigos brincando, o brilho dos olhos no parabéns e os detalhes carinhosos da decoração.
+              </p>
+              <ul class="text-[12px] text-darktext/80 space-y-1.5 mb-6 border-t border-sand pt-3 font-medium">
+                <li class="flex items-center gap-2">✓ Cobertura sensível e não intrusiva</li>
+                <li class="flex items-center gap-2">✓ Fotos de detalhes + fotos familiares</li>
+                <li class="flex items-center gap-2">✓ Entrega ágil para compartilhar</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/5561999999999?text=Ol%C3%A1%2C%20Nat%C3%A1lia!%20Gostaria%20de%20saber%20mais%20sobre%20Festas%20e%20Batizados." target="_blank" class="w-full py-2.5 rounded-full border border-forest text-forest text-[11px] uppercase tracking-widest font-semibold text-center hover:bg-forest hover:text-cream transition-colors block">
+              Consultar Vagas
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. PORTFÓLIO & GALERIA EDITORIAL COM FILTROS E LIGHTBOX -->
+  <section id="portfolio" class="py-24 sm:py-32 bg-cream border-t border-champagne">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <p class="eyebrow text-leaf mb-3">galeria autoral</p>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-forest font-normal leading-tight mb-4">
+          Fragmentos de histórias reais
+        </h2>
+        <p class="text-warmgray text-sm sm:text-base font-light">
+          Clique em qualquer imagem para ampliar e mergulhar em cada detalhe.
+        </p>
+
+        <!-- Filtros do Portfólio -->
+        <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mt-8" id="portfolio-filters">
+          <button data-filter="all" class="portfolio-filter active px-4 py-1.5 rounded-full text-xs uppercase tracking-widest font-medium bg-forest text-cream transition-all">Todos</button>
+          <button data-filter="gestante" class="portfolio-filter px-4 py-1.5 rounded-full text-xs uppercase tracking-widest font-medium bg-sand text-darktext hover:bg-champagne transition-all">Gestante</button>
+          <button data-filter="familia" class="portfolio-filter px-4 py-1.5 rounded-full text-xs uppercase tracking-widest font-medium bg-sand text-darktext hover:bg-champagne transition-all">Família</button>
+          <button data-filter="newborn" class="portfolio-filter px-4 py-1.5 rounded-full text-xs uppercase tracking-widest font-medium bg-sand text-darktext hover:bg-champagne transition-all">Newborn</button>
+          <button data-filter="festas" class="portfolio-filter px-4 py-1.5 rounded-full text-xs uppercase tracking-widest font-medium bg-sand text-darktext hover:bg-champagne transition-all">Celebrações</button>
+        </div>
+      </div>
+
+      <!-- Mosaico Editorial de Fotos -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 auto-rows-[220px] sm:auto-rows-[260px]" id="portfolio-grid">
+        
+        <!-- Foto 1 (Gestante - Alta) -->
+        <div class="portfolio-item gestante row-span-2 relative overflow-hidden rounded-xl group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1544126592-807ade215a0b?auto=format&fit=crop&w=1600&q=90', 'A doce espera sob a luz da tarde', 'Ensaio Gestante')">
+          <img src="https://images.unsplash.com/photo-1544126592-807ade215a0b?auto=format&fit=crop&w=800&q=85" alt="Ensaio Gestante" class="w-full h-full object-cover img-zoom">
+          <div class="absolute inset-0 bg-forest/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 text-cream">
+            <span class="text-[10px] uppercase tracking-widest text-sand">Gestante</span>
+            <p class="font-serif text-lg">A doce espera</p>
+          </div>
+        </div>
+
+        <!-- Foto 2 (Família) -->
+        <div class="portfolio-item familia relative overflow-hidden rounded-xl group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?auto=format&fit=crop&w=1600&q=90', 'Gargalhadas espontâneas no quintal', 'Família Lifestyle')">
+          <img src="https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?auto=format&fit=crop&w=800&q=85" alt="Família" class="w-full h-full object-cover img-zoom">
+          <div class="absolute inset-0 bg-forest/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-cream">
+            <span class="text-[10px] uppercase tracking-widest text-sand">Família</span>
+            <p class="font-serif text-base">Riso compartilhado</p>
+          </div>
+        </div>
+
+        <!-- Frase Poética Intercalada -->
+        <div class="portfolio-item all bg-sand rounded-xl p-6 flex flex-col justify-center items-center text-center border border-champagne">
+          <span class="text-terracotta text-2xl font-cormorant italic">“</span>
+          <p class="font-cormorant italic text-lg sm:text-xl text-forest leading-snug">
+            Memória é o abraço que não se desfaz com o tempo.
+          </p>
+          <span class="w-8 h-px bg-terracotta/40 mt-3"></span>
+        </div>
+
+        <!-- Foto 3 (Newborn - Alta) -->
+        <div class="portfolio-item newborn row-span-2 relative overflow-hidden rounded-xl group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=1600&q=90', 'A fragilidade e ternura dos primeiros dias', 'Newborn Afetivo')">
+          <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=800&q=85" alt="Newborn" class="w-full h-full object-cover img-zoom">
+          <div class="absolute inset-0 bg-forest/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 text-cream">
+            <span class="text-[10px] uppercase tracking-widest text-sand">Newborn</span>
+            <p class="font-serif text-lg">Pequenos detalhes</p>
+          </div>
+        </div>
+
+        <!-- Foto 4 (Celebração / Festa) -->
+        <div class="portfolio-item festas relative overflow-hidden rounded-xl group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1600&q=90', 'O sopro dos 3 anos e a festa viva', 'Celebração Infantil')">
+          <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=85" alt="Festa" class="w-full h-full object-cover img-zoom">
+          <div class="absolute inset-0 bg-forest/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-cream">
+            <span class="text-[10px] uppercase tracking-widest text-sand">Festa Infantil</span>
+            <p class="font-serif text-base">A magia da infância</p>
+          </div>
+        </div>
+
+        <!-- Foto 5 (Gestante / Casal) -->
+        <div class="portfolio-item gestante col-span-2 relative overflow-hidden rounded-xl group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1600&q=90', 'Conexão e parceria à espera do primeiro filho', 'Ensaio Gestante & Casal')">
+          <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1200&q=85" alt="Gestante e Casal" class="w-full h-full object-cover img-zoom">
+          <div class="absolute inset-0 bg-forest/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 text-cream">
+            <span class="text-[10px] uppercase tracking-widest text-sand">Gestante & Casal</span>
+            <p class="font-serif text-xl">A espera compartilhada</p>
+          </div>
+        </div>
+
+        <!-- Foto 6 (Família - Pôr do sol) -->
+        <div class="portfolio-item familia relative overflow-hidden rounded-xl group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1476703993599-0035a21b17a9?auto=format&fit=crop&w=1600&q=90', 'Tarde dourada ao ar livre', 'Família')">
+          <img src="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?auto=format&fit=crop&w=800&q=85" alt="Família ao ar livre" class="w-full h-full object-cover img-zoom">
+          <div class="absolute inset-0 bg-forest/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-cream">
+            <span class="text-[10px] uppercase tracking-widest text-sand">Família</span>
+            <p class="font-serif text-base">Golden Hour</p>
+          </div>
+        </div>
+
+        <!-- Foto 7 (Newborn colo) -->
+        <div class="portfolio-item newborn relative overflow-hidden rounded-xl group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=1600&q=90', 'Paz profunda no aconchego do colo', 'Newborn')">
+          <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=800&q=85" alt="Newborn em casa" class="w-full h-full object-cover img-zoom">
+          <div class="absolute inset-0 bg-forest/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-cream">
+            <span class="text-[10px] uppercase tracking-widest text-sand">Newborn</span>
+            <p class="font-serif text-base">Aconchego & Colo</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox" class="fixed inset-0 z-50 bg-forest/95 backdrop-blur-md hidden items-center justify-center p-4">
+    <button onclick="closeLightbox()" aria-label="Fechar galeria" class="absolute top-6 right-6 text-cream/70 hover:text-cream p-2">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <div class="max-w-4xl max-h-[85vh] flex flex-col items-center">
+      <img id="lightbox-img" src="" alt="Foto ampliada" class="max-w-full max-h-[75vh] object-contain rounded-lg shadow-2xl mb-4">
+      <div class="text-center text-cream">
+        <span id="lightbox-tag" class="text-[11px] uppercase tracking-widest text-sage block"></span>
+        <h4 id="lightbox-caption" class="font-serif text-xl mt-1"></h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8. SIMULADOR INTERATIVO DE EXPERIÊNCIA & PACOTE -->
+  <section id="simulador" class="py-24 sm:py-32 bg-linen relative">
+    <div class="max-w-5xl mx-auto px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <p class="eyebrow text-terracotta mb-3">monte seu momento</p>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-forest font-normal leading-tight mb-4">
+          Simulador de Experiência Fotográfica
+        </h2>
+        <p class="text-warmgray text-sm sm:text-base font-light">
+          Escolha o tipo de ensaio, o cenário ideal e os complementos para gerar um roteiro personalizado com solicitação direta no WhatsApp.
+        </p>
+      </div>
+
+      <!-- Caixa do Simulador -->
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border border-champagne shadow-md">
+        
+        <!-- Passo 1: Tipo de Ensaio -->
+        <div class="mb-8">
+          <label class="block text-xs uppercase tracking-widest font-semibold text-forest mb-4">
+            1. Qual história você quer registrar?
+          </label>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3" id="calc-service">
+            <button type="button" class="calc-btn active p-4 rounded-xl border border-leaf bg-leaf/10 text-forest text-xs font-medium text-center transition-all" data-service="Ensaio Gestante">
+              🤰 Gestante
+            </button>
+            <button type="button" class="calc-btn p-4 rounded-xl border border-champagne text-darktext text-xs font-medium text-center hover:border-leaf transition-all" data-service="Família & Lifestyle">
+              👨‍👩‍👧‍👦 Família
+            </button>
+            <button type="button" class="calc-btn p-4 rounded-xl border border-champagne text-darktext text-xs font-medium text-center hover:border-leaf transition-all" data-service="Newborn Afetivo">
+              👶 Newborn
+            </button>
+            <button type="button" class="calc-btn p-4 rounded-xl border border-champagne text-darktext text-xs font-medium text-center hover:border-leaf transition-all" data-service="Festa Infantil">
+              🎂 Aniversário
+            </button>
+          </div>
+        </div>
+
+        <!-- Passo 2: Cenário Preferido -->
+        <div class="mb-8">
+          <label class="block text-xs uppercase tracking-widest font-semibold text-forest mb-4">
+            2. Onde você gostaria de ser fotografado?
+          </label>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3" id="calc-location">
+            <button type="button" class="calc-btn active p-4 rounded-xl border border-leaf bg-leaf/10 text-forest text-xs font-medium text-center transition-all" data-location="Ao ar livre (Pôr do Sol)">
+              🌾 Ao ar livre / Pôr do sol
+            </button>
+            <button type="button" class="calc-btn p-4 rounded-xl border border-champagne text-darktext text-xs font-medium text-center hover:border-leaf transition-all" data-location="No aconchego do lar (Lifestyle)">
+              🏡 No aconchego de casa
+            </button>
+            <button type="button" class="calc-btn p-4 rounded-xl border border-champagne text-darktext text-xs font-medium text-center hover:border-leaf transition-all" data-location="Estúdio Afetivo">
+              🕯️ Estúdio Afetivo com Luz Suave
+            </button>
+          </div>
+        </div>
+
+        <!-- Passo 3: Complementos Afetivos -->
+        <div class="mb-8">
+          <label class="block text-xs uppercase tracking-widest font-semibold text-forest mb-4">
+            3. Deseja incluir foto-produtos impressos?
+          </label>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="calc-addons">
+            <label class="flex items-center gap-3 p-4 rounded-xl border border-champagne cursor-pointer hover:border-leaf transition-all">
+              <input type="checkbox" id="addon-album" class="w-4 h-4 text-forest rounded accent-leaf" checked>
+              <span class="text-xs text-darktext font-medium">Álbum de Linho Fino com gravação dourada (25x25cm)</span>
+            </label>
+            <label class="flex items-center gap-3 p-4 rounded-xl border border-champagne cursor-pointer hover:border-leaf transition-all">
+              <input type="checkbox" id="addon-box" class="w-4 h-4 text-forest rounded accent-leaf">
+              <span class="text-xs text-darktext font-medium">Caixa Artesanal em Madeira com 20 Fotos Reveladas</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Resumo Dinâmico & CTA do WhatsApp -->
+        <div class="bg-sand/70 rounded-2xl p-6 sm:p-8 border border-champagne flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <span class="text-[10px] uppercase tracking-widest text-terracotta font-semibold">Resumo da sua experiência:</span>
+            <h4 id="simulador-summary" class="font-serif text-xl sm:text-2xl text-forest mt-1">
+              Ensaio Gestante • Ao ar livre • Com Álbum de Linho Fino
+            </h4>
+            <p class="text-xs text-warmgray mt-2 font-light">
+              Inclui planejamento de figurino, galeria online privativa e fotos em alta resolução.
+            </p>
+          </div>
+          <button id="simulador-whatsapp-btn" class="w-full md:w-auto px-8 py-4 rounded-full bg-forest text-cream font-semibold text-xs uppercase tracking-[0.22em] hover:bg-terracotta transition-all shadow-md shrink-0 flex items-center justify-center gap-2">
+            <span>Pedir Proposta Deste Pacote</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 9. A JORNADA DO CLIENTE (O PASSO A PASSO) -->
+  <section class="py-24 sm:py-32 bg-sand/40 border-y border-champagne">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <p class="eyebrow text-leaf mb-3">como funciona</p>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-forest font-normal leading-tight mb-4">
+          A sua jornada de cuidado & carinho
+        </h2>
+        <p class="text-warmgray text-sm sm:text-base font-light">
+          Para que você aproveite o momento com tranquilidade, tudo é pensado com clareza.
+        </p>
+      </div>
+
+      <!-- 5 Etapas em Linha do Tempo -->
+      <div class="grid md:grid-cols-5 gap-6 text-center md:text-left relative">
+        
+        <div class="p-4 bg-white/80 rounded-xl border border-champagne shadow-sm">
+          <span class="font-serif text-2xl text-terracotta font-semibold block mb-2">01</span>
+          <h4 class="font-serif text-lg text-forest mb-2">Conversa Inicial</h4>
+          <p class="text-xs text-warmgray leading-relaxed font-light">
+            Alinhamos expectativas, entendemos o estilo da família e escolhemos a data e o cenário ideal.
+          </p>
+        </div>
+
+        <div class="p-4 bg-white/80 rounded-xl border border-champagne shadow-sm">
+          <span class="font-serif text-2xl text-terracotta font-semibold block mb-2">02</span>
+          <h4 class="font-serif text-lg text-forest mb-2">Guia de Figurino</h4>
+          <p class="text-xs text-warmgray leading-relaxed font-light">
+            Você recebe meu guia exclusivo de paletas e combinações para roupas confortáveis e harmoniosas.
+          </p>
+        </div>
+
+        <div class="p-4 bg-white/80 rounded-xl border border-champagne shadow-sm">
+          <span class="font-serif text-2xl text-terracotta font-semibold block mb-2">03</span>
+          <h4 class="font-serif text-lg text-forest mb-2">O Dia do Ensaio</h4>
+          <p class="text-xs text-warmgray leading-relaxed font-light">
+            Um encontro leve e relaxante. Deixamos a música rolar e o afeto guiar os passos sem correria.
+          </p>
+        </div>
+
+        <div class="p-4 bg-white/80 rounded-xl border border-champagne shadow-sm">
+          <span class="font-serif text-2xl text-terracotta font-semibold block mb-2">04</span>
+          <h4 class="font-serif text-lg text-forest mb-2">Curadoria Autoral</h4>
+          <p class="text-xs text-warmgray leading-relaxed font-light">
+            Tratamento minucioso de cor e luz, imagem por imagem, respeitando os tons de pele originais.
+          </p>
+        </div>
+
+        <div class="p-4 bg-white/80 rounded-xl border border-champagne shadow-sm">
+          <span class="font-serif text-2xl text-terracotta font-semibold block mb-2">05</span>
+          <h4 class="font-serif text-lg text-forest mb-2">Galeria & Álbum</h4>
+          <p class="text-xs text-warmgray leading-relaxed font-light">
+            Receba sua galeria privativa em alta resolução e o seu álbum encadernado pronto para ser folheado.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 10. O ÁLBUM AFETIVO (FOTO-PRODUTO TANGÍVEL) -->
+  <section id="albuns" class="py-24 sm:py-32 bg-linen">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        
+        <div>
+          <p class="eyebrow text-terracotta mb-4">herança de família</p>
+          <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-forest font-normal leading-[1.2] mb-6">
+            O álbum impresso: o lar definitivo para as suas memórias mais caras.
+          </h2>
+          <p class="text-warmgray leading-relaxed mb-6 font-light">
+            Quantas fotos você já perdeu em celulares antigos, redes sociais esquecidas ou discos rígidos quebrados?
+          </p>
+          <p class="text-warmgray leading-relaxed mb-8 font-light">
+            O álbum é a materialização do amor da sua família. Feito em encadernação artesanal com linho puro importado, folhas de alta gramatura com abertura panorâmica de 180° e gravação em hot stamping dourado com os nomes de vocês.
+          </p>
+
+          <div class="grid grid-cols-2 gap-4 mb-8">
+            <div class="p-4 rounded-xl bg-sand/60 border border-champagne">
+              <span class="text-xs uppercase tracking-wider font-semibold text-forest block mb-1">Capa em Linho Nobre</span>
+              <span class="text-xs text-warmgray">Toque aveludado e cores orgânicas</span>
+            </div>
+            <div class="p-4 rounded-xl bg-sand/60 border border-champagne">
+              <span class="text-xs uppercase tracking-wider font-semibold text-forest block mb-1">Papel Fotográfico Silk</span>
+              <span class="text-xs text-warmgray">Durabilidade superior a 100 anos</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/5561999999999?text=Ol%C3%A1%2C%20Nat%C3%A1lia!%20Gostaria%20de%20conhecer%20os%20modelos%20de%20%C3%A1lbuns%20impressos." target="_blank" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-forest text-cream text-xs uppercase tracking-widest font-semibold hover:bg-terracotta transition-colors">
+            Conhecer Modelos de Álbuns
+          </a>
+        </div>
+
+        <div class="relative">
+          <div class="rounded-2xl overflow-hidden shadow-2xl border border-champagne">
+            <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=85" alt="Álbum de fotos encadernado em linho fino" class="w-full aspect-[4/3] object-cover">
+          </div>
+          <div class="absolute -bottom-6 -left-6 bg-white p-5 rounded-xl border border-champagne shadow-lg hidden sm:block max-w-xs">
+            <p class="font-cormorant italic text-lg text-forest">"O cheiro do papel impresso devolve o abraço que a tela não consegue dar."</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. SOBRE NATÁLIA FIGUEREDO -->
+  <section id="sobre" class="py-24 sm:py-32 bg-cream border-t border-champagne">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid lg:grid-cols-5 gap-12 lg:gap-16 items-center">
+        
+        <!-- Foto de Natália -->
+        <div class="lg:col-span-2 relative">
+          <div class="relative aspect-square sm:aspect-[4/5] lg:aspect-square rounded-2xl overflow-hidden shadow-xl border border-champagne">
+            <img src="assets/natalia-figueredo.png" alt="Natália Figueredo, fotógrafa" class="w-full h-full object-cover object-center">
+          </div>
+          <div class="absolute -bottom-4 -right-4 bg-linen px-4 py-2.5 rounded-full border border-champagne shadow-md flex items-center gap-2">
+            <svg class="w-4 h-4 text-leaf" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span class="text-[11px] uppercase tracking-widest font-semibold text-forest">Brasília, DF & Região</span>
+          </div>
+        </div>
+
+        <!-- Bio e Filosofia -->
+        <div class="lg:col-span-3">
+          <p class="eyebrow text-leaf mb-3">a fotógrafa</p>
+          <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-forest font-normal leading-tight mb-2">
+            Natália Figueredo
+          </h2>
+          <span class="text-terracotta text-sm uppercase tracking-widest font-semibold block mb-6">
+            Guardiã de memórias com afeto
+          </span>
+
+          <div class="space-y-4 text-warmgray text-sm sm:text-base leading-relaxed font-light">
+            <p>
+              Olá! Sou mãe, apaixonada por café fresco, luz da tarde e, acima de tudo, por gente e suas histórias.
+            </p>
+            <p>
+              Minha paixão pela fotografia começou quando percebi que as lembranças mais valiosas da minha infância não eram posadas: eram as mãos sujas de bolo na mesa da vovó e o olhar cúmplice dos meus pais ao me ver dormir.
+            </p>
+            <p>
+              Há mais de 7 anos dedico meu olhar a famílias que desejam guardar a verdade dos seus dias. Meu papel não é dizer como você deve sorrir, mas criar a calma necessária para que você sinta e viva o momento — enquanto eu registro tudo com reverência e discrição.
+            </p>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-champagne flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div>
+              <p class="font-cormorant italic text-xl text-forest">"Fotografar é acolher com a luz."</p>
+              <span class="text-xs text-warmgray block">— Natália Figueredo</span>
+            </div>
+            <a href="https://wa.me/5561999999999?text=Ol%C3%A1%2C%20Nat%C3%A1lia!%20Li%20sua%20hist%C3%B3ria%20e%20gostaria%20de%20conversar." target="_blank" class="px-6 py-2.5 rounded-full border border-forest text-forest text-xs uppercase tracking-widest font-semibold hover:bg-forest hover:text-cream transition-colors">
+              Conversar com Natália
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. DEPOIMENTOS DE CLIENTES (PROVA SOCIAL) -->
+  <section class="py-24 sm:py-32 bg-linen border-t border-champagne">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <p class="eyebrow text-leaf mb-3">palavras de amor</p>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-forest font-normal leading-tight mb-4">
+          O que dizem as famílias que já viveram essa experiência
+        </h2>
+        <p class="text-warmgray text-sm sm:text-base font-light">
+          A maior recompensa é a emoção ao receber a galeria e as lágrimas de carinho.
+        </p>
+      </div>
+
+      <!-- Grid de 3 Depoimentos -->
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <div class="bg-white p-8 rounded-2xl border border-champagne shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-500 mb-4">★★★★★</div>
+            <p class="font-cormorant italic text-lg text-forest leading-relaxed mb-6">
+              "Eu e meu marido morríamos de vergonha de fotos. A Natália nos deixou tão à vontade que nem vimos o tempo passar. Quando recebemos a galeria, choramos juntos. Foi o melhor presente da gravidez."
+            </p>
+          </div>
+          <div class="border-t border-sand pt-4">
+            <h5 class="font-serif text-base text-forest font-semibold">Mariana & Gabriel</h5>
+            <span class="text-xs text-warmgray">Ensaio Gestante do Theo</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl border border-champagne shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-500 mb-4">★★★★★</div>
+            <p class="font-cormorant italic text-lg text-forest leading-relaxed mb-6">
+              "Com duas crianças pequenas, achei que seria um caos. A Natália teve uma paciência infinita, brincou com eles e capturou sorrisos tão verdadeiros que parecia pintura. O álbum virou o xodó da casa."
+            </p>
+          </div>
+          <div class="border-t border-sand pt-4">
+            <h5 class="font-serif text-base text-forest font-semibold">Carolina Ribeiro</h5>
+            <span class="text-xs text-warmgray">Ensaio Família Lifestyle</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl border border-champagne shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-500 mb-4">★★★★★</div>
+            <p class="font-cormorant italic text-lg text-forest leading-relaxed mb-6">
+              "O cuidado que ela teve no newborn do Joaquim foi emocionante. Ela respeitou cada mamada e o sono dele. As fotos transmitem exatamente a paz e o amor que estávamos sentindo naqueles dias."
+            </p>
+          </div>
+          <div class="border-t border-sand pt-4">
+            <h5 class="font-serif text-base text-forest font-semibold">Beatriz & Lucas</h5>
+            <span class="text-xs text-warmgray">Newborn Afetivo</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 13. PERGUNTAS FREQUENTES (FAQ) -->
+  <section id="faq" class="py-24 sm:py-32 bg-sand/40 border-t border-champagne">
+    <div class="max-w-4xl mx-auto px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <p class="eyebrow text-leaf mb-3">esclarecendo detalhes</p>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-forest font-normal leading-tight mb-4">
+          Perguntas Frequentes
+        </h2>
+        <p class="text-warmgray text-sm sm:text-base font-light">
+          Tire suas dúvidas e sinta-se seguro antes de darmos o próximo passo.
+        </p>
+      </div>
+
+      <!-- Lista de Acordeão -->
+      <div class="space-y-4" id="faq-list">
+        
+        <!-- FAQ 1 -->
+        <div class="faq-item bg-white rounded-2xl border border-champagne shadow-sm overflow-hidden">
+          <button class="faq-question w-full p-6 text-left flex items-center justify-between font-serif text-lg text-forest focus:outline-none" onclick="toggleFaq(this)">
+            <span>Nunca fiz um ensaio e tenho vergonha de posar. Como funciona?</span>
+            <svg class="faq-icon w-5 h-5 text-leaf transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-6 text-sm text-warmgray font-light leading-relaxed">
+            Fique tranquila! Quase 95% das pessoas que fotografo nunca fizeram um ensaio profissional. Eu não peço poses rígidas. Nós conversamos, colocamos músicas que vocês gostam e eu oriento pequenos movimentos naturais: uma troca de olhares, uma risada ou uma caminhada. Você vai se esquecer da câmera em poucos minutos.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item bg-white rounded-2xl border border-champagne shadow-sm overflow-hidden">
+          <button class="faq-question w-full p-6 text-left flex items-center justify-between font-serif text-lg text-forest focus:outline-none" onclick="toggleFaq(this)">
+            <span>Qual é a época ideal para fazer o ensaio de gestante?</span>
+            <svg class="faq-icon w-5 h-5 text-leaf transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-6 text-sm text-warmgray font-light leading-relaxed">
+            Recomendo realizar o ensaio entre a 28ª e a 32ª semana de gestação. Nesse período, a barriga já tem um desenho lindo e definido, e a futura mamãe costuma ter bastante disposição e menor sensação de inchaço ou cansaço.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item bg-white rounded-2xl border border-champagne shadow-sm overflow-hidden">
+          <button class="faq-question w-full p-6 text-left flex items-center justify-between font-serif text-lg text-forest focus:outline-none" onclick="toggleFaq(this)">
+            <span>E se meu filho ficar tímido, cansar ou chorar no dia?</span>
+            <svg class="faq-icon w-5 h-5 text-leaf transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-6 text-sm text-warmgray font-light leading-relaxed">
+            Crianças são espontâneas e têm seu próprio tempo! Não temos pressa. Se for necessário pausar para um lanchinho, um carinho ou uma brincadeira, nós pausamos. Muitas das fotos mais lindas e emocionantes acontecem justamente nesses momentos de acolhimento.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item bg-white rounded-2xl border border-champagne shadow-sm overflow-hidden">
+          <button class="faq-question w-full p-6 text-left flex items-center justify-between font-serif text-lg text-forest focus:outline-none" onclick="toggleFaq(this)">
+            <span>Qual é o prazo de entrega das fotos e do álbum?</span>
+            <svg class="faq-icon w-5 h-5 text-leaf transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-6 text-sm text-warmgray font-light leading-relaxed">
+            Uma prévia especial com algumas fotos é enviada em até 48 horas após a sessão para matar a curiosidade! A galeria digital completa tratada é entregue em até 15 dias úteis. Após a aprovação do layout do álbum, a encadernação artesanal leva em média de 25 a 30 dias.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item bg-white rounded-2xl border border-champagne shadow-sm overflow-hidden">
+          <button class="faq-question w-full p-6 text-left flex items-center justify-between font-serif text-lg text-forest focus:outline-none" onclick="toggleFaq(this)">
+            <span>Com quanta antecedência devo reservar minha data?</span>
+            <svg class="faq-icon w-5 h-5 text-leaf transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-6 text-sm text-warmgray font-light leading-relaxed">
+            Como realizo um número limitado de ensaios por mês para garantir dedicação exclusiva, sugiro reservar com pelo menos 3 a 6 semanas de antecedência, especialmente se desejar fotografar aos finais de semana.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 14. FORMULÁRIO DE CONTATO DIRETO & CONVITE FINAL -->
+  <section id="contato" class="py-24 sm:py-32 bg-forest text-cream relative overflow-hidden">
+    <!-- Fundo com imagem translúcida -->
+    <div class="absolute inset-0 z-0 opacity-15">
+      <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=2000&q=80" alt="Família feliz" class="w-full h-full object-cover">
+    </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        
+        <div>
+          <p class="eyebrow text-champagne mb-4">um último convite</p>
+          <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-light leading-tight mb-6">
+            Não deixe que esse momento se torne apenas uma lembrança vaga.
+          </h2>
+          <p class="text-cream/80 text-sm sm:text-base leading-relaxed mb-8 font-light">
+            O tempo voa e as fases mudam rapidamente. Reserve sua data para criarmos juntos memórias que aquecerão o coração da sua família por toda a vida.
+          </p>
+
+          <div class="space-y-4 text-xs sm:text-sm text-cream/80">
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M19.05 4.91A10.04 10.04 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.93 9.93 0 0 0 4.78 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.02Z"/></svg>
+              <span>WhatsApp: (61) 99999-9999</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-champagne shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <span>E-mail: contato@nataliafigueredo.com.br</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-champagne shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <span>Atendimento em Brasília, DF e viagens sob consulta</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulário de Contato Rápido com Envio para WhatsApp -->
+        <div class="bg-white text-darktext p-8 rounded-3xl shadow-2xl border border-champagne">
+          <h3 class="font-serif text-2xl text-forest mb-2">Solicite sua proposta</h3>
+          <p class="text-xs text-warmgray mb-6">Preencha abaixo para receber nossa apresentação completa de valores:</p>
+
+          <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
+            <div>
+              <label class="block text-[11px] uppercase tracking-wider font-semibold text-warmgray mb-1">Seu Nome *</label>
+              <input type="text" id="form-name" required placeholder="Como podemos te chamar?" class="w-full px-4 py-3 rounded-xl border border-champagne text-xs focus:ring-1 focus:ring-leaf focus:outline-none">
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-[11px] uppercase tracking-wider font-semibold text-warmgray mb-1">WhatsApp *</label>
+                <input type="tel" id="form-phone" required placeholder="(61) 99999-9999" class="w-full px-4 py-3 rounded-xl border border-champagne text-xs focus:ring-1 focus:ring-leaf focus:outline-none">
+              </div>
+              <div>
+                <label class="block text-[11px] uppercase tracking-wider font-semibold text-warmgray mb-1">Tipo de Ensaio</label>
+                <select id="form-type" class="w-full px-4 py-3 rounded-xl border border-champagne text-xs focus:ring-1 focus:ring-leaf focus:outline-none bg-white">
+                  <option value="Ensaio Gestante">Ensaio Gestante</option>
+                  <option value="Fotografia de Família">Fotografia de Família</option>
+                  <option value="Newborn Afetivo">Newborn Afetivo</option>
+                  <option value="Festa Infantil ou Batizado">Festa Infantil / Batizado</option>
+                  <option value="Retrato Feminino">Retrato Feminino</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-[11px] uppercase tracking-wider font-semibold text-warmgray mb-1">Mês ou data de preferência</label>
+              <input type="text" id="form-date" placeholder="Ex: Novembro ou data específica" class="w-full px-4 py-3 rounded-xl border border-champagne text-xs focus:ring-1 focus:ring-leaf focus:outline-none">
+            </div>
+
+            <div>
+              <label class="block text-[11px] uppercase tracking-wider font-semibold text-warmgray mb-1">Mensagem ou detalhe especial</label>
+              <textarea id="form-message" rows="3" placeholder="Conte um pouquinho sobre a fase que estão vivendo..." class="w-full px-4 py-3 rounded-xl border border-champagne text-xs focus:ring-1 focus:ring-leaf focus:outline-none"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-4 rounded-full bg-forest text-cream font-semibold text-xs uppercase tracking-[0.22em] hover:bg-terracotta transition-all shadow-md flex items-center justify-center gap-2">
+              <span>Enviar e Abrir no WhatsApp</span>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19.05 4.91A10.04 10.04 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.93 9.93 0 0 0 4.78 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.02Z"/></svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 15. RODAPÉ (FOOTER) -->
+  <footer class="bg-forest text-cream/70 py-16 border-t border-moss text-xs font-light">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        
+        <!-- Coluna 1: Marca -->
+        <div class="md:col-span-2">
+          <p class="font-serif text-2xl text-cream font-medium tracking-wide">Natália Figueredo</p>
+          <p class="text-[10px] uppercase tracking-[0.3em] text-champagne mt-0.5">fotografia afetiva & documental</p>
+          <p class="mt-4 text-cream/70 max-w-sm leading-relaxed">
+            Eternizando histórias reais, conexões verdadeiras e a poesia dos momentos mais ternos da vida de cada família.
+          </p>
+        </div>
+
+        <!-- Coluna 2: Navegação -->
+        <div>
+          <p class="text-xs uppercase tracking-widest text-cream font-semibold mb-4">Navegação</p>
+          <ul class="space-y-2">
+            <li><a href="#o-olhar" class="hover:text-cream transition-colors">O Olhar</a></li>
+            <li><a href="#servicos" class="hover:text-cream transition-colors">Experiências</a></li>
+            <li><a href="#portfolio" class="hover:text-cream transition-colors">Portfólio</a></li>
+            <li><a href="#simulador" class="hover:text-cream transition-colors">Simulador</a></li>
+            <li><a href="#sobre" class="hover:text-cream transition-colors">Sobre Natália</a></li>
+            <li><a href="#albuns" class="hover:text-cream transition-colors">Álbuns</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Redes & Contato -->
+        <div>
+          <p class="text-xs uppercase tracking-widest text-cream font-semibold mb-4">Conecte-se</p>
+          <ul class="space-y-2">
+            <li><a href="https://instagram.com" target="_blank" class="hover:text-cream transition-colors flex items-center gap-2">📷 Instagram: @nataliafigueredofotografia</a></li>
+            <li><a href="https://wa.me/5561999999999" target="_blank" class="hover:text-cream transition-colors flex items-center gap-2">💬 WhatsApp: (61) 99999-9999</a></li>
+            <li><a href="mailto:contato@nataliafigueredo.com.br" class="hover:text-cream transition-colors flex items-center gap-2">✉️ contato@nataliafigueredo.com.br</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="border-t border-moss/60 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-cream/50 uppercase tracking-widest">
+        <span>© 2026 Natália Figueredo Fotografia. Todos os direitos reservados.</span>
+        <span>Feito com afeto & sensibilidade</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 16. BOTÃO FLUTUANTE DO WHATSAPP -->
+  <a href="https://wa.me/5561999999999?text=Ol%C3%A1%2C%20Nat%C3%A1lia!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20e%20datas%20dispon%C3%ADveis." target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp com Natália Figueredo" class="fixed bottom-6 right-6 z-40 flex items-center justify-center w-14 h-14 rounded-full bg-emerald-600 text-white shadow-2xl hover:scale-110 hover:bg-emerald-500 transition-all duration-300 group">
+    <span class="absolute right-16 bg-forest text-cream text-[11px] font-medium px-3 py-1.5 rounded-full shadow-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+      Conversar no WhatsApp
+    </span>
+    <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M19.05 4.91A10.04 10.04 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.93 9.93 0 0 0 4.78 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.02Zm-7.01 15.24h-.01a8.23 8.23 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.27-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.97-.14.16-.29.18-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.49-.41-.42-.56-.43h-.48c-.16 0-.43.06-.66.31-.23.25-.86.84-.86 2.05 0 1.2.88 2.37 1 2.53.12.16 1.73 2.65 4.2 3.71.59.25 1.05.4 1.4.51.59.19 1.12.16 1.55.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>
+  </a>
+
+  <!-- SCRIPTS INTERATIVOS -->
+  <script>
+    // 1. Menu Mobile Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // 2. Navbar Scroll Pill Effect
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('main-header');
+      const pill = document.getElementById('navbar-pill');
+      if (window.scrollY > 50) {
+        pill.classList.add('shadow-md', 'bg-white/95');
+        pill.classList.remove('bg-white/85');
+      } else {
+        pill.classList.remove('shadow-md', 'bg-white/95');
+        pill.classList.add('bg-white/85');
+      }
+    });
+
+    // 3. Filtros do Portfólio
+    const filterButtons = document.querySelectorAll('.portfolio-filter');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('active', 'bg-forest', 'text-cream');
+          b.classList.add('bg-sand', 'text-darktext');
+        });
+        btn.classList.add('active', 'bg-forest', 'text-cream');
+        btn.classList.remove('bg-sand', 'text-darktext');
+
+        const filter = btn.getAttribute('data-filter');
+
+        portfolioItems.forEach(item => {
+          if (filter === 'all' || item.classList.contains(filter)) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 4. Lightbox Modal
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const lightboxTag = document.getElementById('lightbox-tag');
+
+    function openLightbox(src, caption, tag) {
+      lightboxImg.src = src;
+      lightboxCaption.textContent = caption;
+      lightboxTag.textContent = tag;
+      lightbox.classList.remove('hidden');
+      lightbox.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightbox.classList.add('hidden');
+      lightbox.classList.remove('flex');
+      document.body.style.overflow = 'auto';
+    }
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    // 5. Simulador Interativo de Experiência
+    let selectedService = "Ensaio Gestante";
+    let selectedLocation = "Ao ar livre (Pôr do Sol)";
+
+    const serviceBtns = document.querySelectorAll('#calc-service .calc-btn');
+    serviceBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        serviceBtns.forEach(b => {
+          b.classList.remove('active', 'border-leaf', 'bg-leaf/10', 'text-forest');
+          b.classList.add('border-champagne', 'text-darktext');
+        });
+        btn.classList.add('active', 'border-leaf', 'bg-leaf/10', 'text-forest');
+        btn.classList.remove('border-champagne', 'text-darktext');
+        selectedService = btn.getAttribute('data-service');
+        updateSimulator();
+      });
+    });
+
+    const locationBtns = document.querySelectorAll('#calc-location .calc-btn');
+    locationBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        locationBtns.forEach(b => {
+          b.classList.remove('active', 'border-leaf', 'bg-leaf/10', 'text-forest');
+          b.classList.add('border-champagne', 'text-darktext');
+        });
+        btn.classList.add('active', 'border-leaf', 'bg-leaf/10', 'text-forest');
+        btn.classList.remove('border-champagne', 'text-darktext');
+        selectedLocation = btn.getAttribute('data-location');
+        updateSimulator();
+      });
+    });
+
+    const addonAlbum = document.getElementById('addon-album');
+    const addonBox = document.getElementById('addon-box');
+    addonAlbum.addEventListener('change', updateSimulator);
+    addonBox.addEventListener('change', updateSimulator);
+
+    function updateSimulator() {
+      const summaryEl = document.getElementById('simulador-summary');
+      let addons = [];
+      if (addonAlbum.checked) addons.push("Álbum de Linho Fino");
+      if (addonBox.checked) addons.push("Caixa em Madeira com Fotos Reveladas");
+
+      const addonsText = addons.length > 0 ? " • " + addons.join(" + ") : "";
+      summaryEl.textContent = `${selectedService} • ${selectedLocation}${addonsText}`;
+    }
+
+    document.getElementById('simulador-whatsapp-btn').addEventListener('click', () => {
+      const summaryText = document.getElementById('simulador-summary').textContent;
+      const text = encodeURIComponent(`Olá, Natália! Montei uma proposta no simulador do site e gostaria de consultar valores:\n\nConfiguração escolhida: ${summaryText}`);
+      window.open(`https://wa.me/5561999999999?text=${text}`, '_blank');
+    });
+
+    // 6. FAQ Acordeão
+    function toggleFaq(btn) {
+      const item = btn.parentElement;
+      const isActive = item.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    }
+
+    // 7. Envio do Formulário de Contato Direto para o WhatsApp
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('form-name').value;
+      const phone = document.getElementById('form-phone').value;
+      const type = document.getElementById('form-type').value;
+      const date = document.getElementById('form-date').value || "A combinar";
+      const message = document.getElementById('form-message').value || "Sem mensagem adicional";
+
+      const text = encodeURIComponent(
+        `Olá, Natália! Vim pelo site e gostaria de solicitar uma proposta:\n\n` +
+        `👤 *Nome:* ${name}\n` +
+        `📱 *WhatsApp:* ${phone}\n` +
+        `📸 *Tipo de Ensaio:* ${type}\n` +
+        `🗓️ *Data/Mês pretendido:* ${date}\n` +
+        `💬 *Mensagem:* ${message}`
+      );
+
+      window.open(`https://wa.me/5561999999999?text=${text}`, '_blank');
+    }
+  </script>
+</body>
+</html>
